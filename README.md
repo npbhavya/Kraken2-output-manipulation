@@ -49,7 +49,7 @@ optional arguments: \
   -c {1,2,3,4,5,6}          Enter the column number in the report you would like to include in the output \
   -o OUTPUT                 Enter the output file name 
 
-**For getting taxa information instead of taxa ID **
+#### For getting taxa information instead of taxa ID 
 
 *python kraken-multiple-taxa.py --help \
 usage: kraken-multiple-taxa.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}] [-c {1,2,3,4,5,6}] [-o OUTPUT]* 
@@ -63,7 +63,7 @@ optional arguments: \
   -c {1,2,3,4,5,6}          Enter the column number in the report you would like to include in the output \
   -o OUTPUT                 Enter the output file name 
 
-**Detailed usage description** 
+#### Detailed usage description 
  The input for this script is 
  - directory with kraken reports only. Use the -d flag to point to this directory. 
  The format of the output should be 
