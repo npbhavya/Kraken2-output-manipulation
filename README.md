@@ -16,6 +16,8 @@ For documentation on Krkaen2 installation and maunal, here is a link to kraken2 
 - https://ccb.jhu.edu/software/kraken2/index.shtml?t=manual
 - https://ncgas.org/Blog_Posts/Metagenomic%20taxa%20analysis.php
 
+Make sure to add the parameter --report-zero-counts in the kraken2 command, if this paramter is not added, then the result from this script will be hard to parse through. 
+
 ## Dependecies 
 **Python 3**
 Python packages 
