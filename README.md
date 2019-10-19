@@ -1,7 +1,13 @@
 # Kraken2-output-manipulation
 Kraken2 output generates a report for each datasets, this script takes these individual output reports and combines them to one file in the formal 
 Taxa ID     sample1     sample2     sample3     sample4 .....
-1234        1909          10        100         0       ....
+1234        1909          10        100         0       .....
+
+or output 
+
+Taxa ID     sample1     sample2     sample3     sample4   .....
+Pseudomonas  1909          10        100         0        .....
+
 
 The Taxa ID number is the same as the column5 in the kraken2 output report, " NCBI taxonomic ID number". 
 The numbers under sample1, sample2, ... etc can be determined by the user to select which value they would like reported 
@@ -41,6 +47,23 @@ optional arguments:
   -c {1,2,3,4,5,6}          Enter the column number in the report you would like to include in the output \
   -o OUTPUT                 Enter the output file name 
 
+**For getting taxa information instead of taxa ID **
+
+python kraken-multiple-taxa.py --help \
+usage: kraken-multiple-taxa.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}]
+                               [-c {1,2,3,4,5,6}] [-o OUTPUT]
+
+Take multiple kraken output files and consolidate them to one output
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -d DIRECTORY          Enter a directory with kraken summary reports
+  -r {U,R,D,K,P,C,O,F,G,S}
+                        Enter a rank code
+  -c {1,2,3,4,5,6}      Enter the column number in the report you would like
+                        to include in the output
+  -o OUTPUT             Enter the output file name
+
 **Detailed usage description** 
  The input for this script is 
  - directory with kraken reports only. Use the -d flag to point to this directory. 
@@ -75,5 +98,10 @@ TaxaID  ['sample1','sample2','sample3','sample4','sample5','sample6'] \
 72275   ['66', '1838', '4664', '462', '75', '2074'] \
 267888  ['45', '1407', '59440', '930', '120', '79'] 
 
+If you ran the kraken-multiple-taxa.py, then the output will be 
+TaxaID           ['sample1','sample2','sample3','sample4','sample5','sample6'] \
+Actinomycetaceae ['210', '859', '2843', '595', '281', '1064'] \
+Budviciaceae     ['80', '359', '1054', '361', '164', '299'] \
+Mycoplasmataceae ['66', '1838', '4664', '462', '75', '2074'] \
+Vibrionaceae     ['45', '1407', '59440', '930', '120', '79'] 
 
-Where the first column is the Taxa ID, and the subsequent columns are the 
