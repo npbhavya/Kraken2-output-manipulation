@@ -2,11 +2,13 @@
 Kraken2 output generates a report for each datasets, this script takes these individual output reports and combines them to one file in the formal 
 
 |Taxa ID| sample1|     sample2|     sample3|     sample4| .....| 
+|--------|-------|------------|------------|------------|------|
 |1234   |    1909|          10|        100 |         0  |     ..... |
 
 or output 
 
 |Taxa     |sample1     |sample2     |sample3    | sample4     |..... | 
+|--------|-------|------------|------------|------------|------|
 |Pseudomonas | 1909    |      10    |    100    |     0       | .....| 
 
 
