@@ -35,8 +35,7 @@ Python packages
 
 ## Usage 
 python kraken-multiple.py --help \
-usage: kraken-multiple.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}] \
-                          [-c {1,2,3,4,5,6}] [-o OUTPUT] \
+usage: kraken-multiple.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}] [-c {1,2,3,4,5,6}] [-o OUTPUT] \
 
 Take multiple kraken output files and consolidate them to one output 
 
@@ -50,8 +49,7 @@ optional arguments: \
 **For getting taxa information instead of taxa ID **
 
 python kraken-multiple-taxa.py --help \
-usage: kraken-multiple-taxa.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}] \
-                               [-c {1,2,3,4,5,6}] [-o OUTPUT] \
+usage: kraken-multiple-taxa.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}] [-c {1,2,3,4,5,6}] [-o OUTPUT] 
 
 Take multiple kraken output files and consolidate them to one output
 
@@ -60,7 +58,7 @@ optional arguments: \
   -d DIRECTORY              Enter a directory with kraken summary reports \
   -r {U,R,D,K,P,C,O,F,G,S}  Enter a rank code \
   -c {1,2,3,4,5,6}          Enter the column number in the report you would like to include in the output \
-  -o OUTPUT                 Enter the output file name \
+  -o OUTPUT                 Enter the output file name 
 
 **Detailed usage description** 
  The input for this script is 
@@ -89,15 +87,15 @@ optional arguments: \
 python kraken-multiple.py -d kraken_report/ -r F -c 2 -o kraken-report-final
 
 ## Output 
-Taking a look at the kraken-report-final \
-TaxaID  ['sample1','sample2','sample3','sample4','sample5','sample6'] \
+Taking a look at the kraken-report-final 
+**TaxaID  ['sample1','sample2','sample3','sample4','sample5','sample6']** \
 135621  ['210', '859', '2843', '595', '281', '1064'] \
 468     ['80', '359', '1054', '361', '164', '299'] \
 72275   ['66', '1838', '4664', '462', '75', '2074'] \
 267888  ['45', '1407', '59440', '930', '120', '79'] 
 
 If you ran the kraken-multiple-taxa.py, then the output will be 
-TaxaID           ['sample1','sample2','sample3','sample4','sample5','sample6'] \
+**TaxaID           ['sample1','sample2','sample3','sample4','sample5','sample6']** \
 Actinomycetaceae ['210', '859', '2843', '595', '281', '1064'] \
 Budviciaceae     ['80', '359', '1054', '361', '164', '299'] \
 Mycoplasmataceae ['66', '1838', '4664', '462', '75', '2074'] \
