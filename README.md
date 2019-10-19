@@ -1,12 +1,13 @@
 # Kraken2-output-manipulation
 Kraken2 output generates a report for each datasets, this script takes these individual output reports and combines them to one file in the formal 
-Taxa ID     sample1     sample2     sample3     sample4 .....
-1234        1909          10        100         0       .....
+
+Taxa ID     sample1     sample2     sample3     sample4 ..... \
+1234        1909          10        100         0       ..... \
 
 or output 
 
-Taxa ID     sample1     sample2     sample3     sample4   .....
-Pseudomonas  1909          10        100         0        .....
+Taxa     sample1     sample2     sample3     sample4     .....  \
+Pseudomonas  1909          10        100         0        ..... \
 
 
 The Taxa ID number is the same as the column5 in the kraken2 output report, " NCBI taxonomic ID number". 
@@ -95,7 +96,7 @@ Taking a look at the kraken-report-final  \
 267888  ['45', '1407', '59440', '930', '120', '79'] 
 
 If you ran the kraken-multiple-taxa.py, then the output will be  \
-**TaxaID           ['sample1','sample2','sample3','sample4','sample5','sample6']** \
+**Taxa           ['sample1','sample2','sample3','sample4','sample5','sample6']** \
 Actinomycetaceae ['210', '859', '2843', '595', '281', '1064'] \
 Budviciaceae     ['80', '359', '1054', '361', '164', '299'] \
 Mycoplasmataceae ['66', '1838', '4664', '462', '75', '2074'] \
