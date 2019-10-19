@@ -37,8 +37,8 @@ Python packages
 - collection 
 
 ## Usage 
-python kraken-multiple.py --help \
-usage: kraken-multiple.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}] [-c {1,2,3,4,5,6}] [-o OUTPUT] \
+*python kraken-multiple.py --help \
+usage: kraken-multiple.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}] [-c {1,2,3,4,5,6}] [-o OUTPUT]* 
 
 Take multiple kraken output files and consolidate them to one output 
 
@@ -51,8 +51,8 @@ optional arguments: \
 
 **For getting taxa information instead of taxa ID **
 
-python kraken-multiple-taxa.py --help \
-usage: kraken-multiple-taxa.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}] [-c {1,2,3,4,5,6}] [-o OUTPUT] 
+*python kraken-multiple-taxa.py --help \
+usage: kraken-multiple-taxa.py [-h] [-d DIRECTORY] [-r {U,R,D,K,P,C,O,F,G,S}] [-c {1,2,3,4,5,6}] [-o OUTPUT]* 
 
 Take multiple kraken output files and consolidate them to one output
 
