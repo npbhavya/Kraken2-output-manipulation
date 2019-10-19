@@ -87,14 +87,14 @@ optional arguments: \
 python kraken-multiple.py -d kraken_report/ -r F -c 2 -o kraken-report-final
 
 ## Output 
-Taking a look at the kraken-report-final 
+Taking a look at the kraken-report-final  \
 **TaxaID  ['sample1','sample2','sample3','sample4','sample5','sample6']** \
 135621  ['210', '859', '2843', '595', '281', '1064'] \
 468     ['80', '359', '1054', '361', '164', '299'] \
 72275   ['66', '1838', '4664', '462', '75', '2074'] \
 267888  ['45', '1407', '59440', '930', '120', '79'] 
 
-If you ran the kraken-multiple-taxa.py, then the output will be 
+If you ran the kraken-multiple-taxa.py, then the output will be  \
 **TaxaID           ['sample1','sample2','sample3','sample4','sample5','sample6']** \
 Actinomycetaceae ['210', '859', '2843', '595', '281', '1064'] \
 Budviciaceae     ['80', '359', '1054', '361', '164', '299'] \
