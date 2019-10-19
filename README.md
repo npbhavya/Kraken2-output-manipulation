@@ -113,7 +113,7 @@ Run the bash command to generate a csv file that can be easily imported to R
 
     sed -e "s/\[//g;s/\]//g;s/'//g;s|\t|,|g" kraken_report_all >kraken_report_all_R.csv
 
-|TaxaID  |'sample1'|'sample2'|'sample3'|'sample4'|'sample5'|'sample6'|
+|TaxaID  |sample1|sample2|sample3|sample4|sample5|sample6|
 |---------|---------|----------|---------|---------|---------|---------|
 |135621  |210|859| 2843| 595| 281| 1064|
 |468     |'80|359|1054|361| 164 |299| 
