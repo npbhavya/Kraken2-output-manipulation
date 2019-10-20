@@ -111,7 +111,7 @@ Vibrionaceae     ['45', '1407', '59440', '930', '120', '79']
 ## Downstream 
 Run the bash command to generate a csv file that can be easily imported to R 
 
-    sed -e "s/\[//g;s/\]//g;s/'//g;s|\t|,|g" kraken_report_all >kraken_report_all_R.csv
+    sed -e "s/\[//g;s/\]//g;s/'//g;s|\t|,|g" kraken_report_all >kraken_report_all_table.csv
 
 |TaxaID  |sample1|sample2|sample3|sample4|sample5|sample6|
 |---------|---------|----------|---------|---------|---------|---------|
