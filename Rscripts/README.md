@@ -1,6 +1,6 @@
 ## R scripts references 
 
-- Most of the code was written with the help of NCGAS R workshop- https://ncgas.org/R%20for%20Biologists%20Workshop.php. 
+- Most of the code was written with the help of NCGAS R workshop- https://ncgas.org/R%20for%20Biologists%20Workshop.php. \
 The chapter on Ordination plots
 
 - R documentation 
