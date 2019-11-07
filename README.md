@@ -119,3 +119,8 @@ Run the bash command to generate a csv file that can be easily imported to R
 |468     |'80|359|1054|361| 164 |299| 
 |72275   |66|1838|4664|462|75| 2074|
 |267888  |45|1407|59440|930|120|79|
+
+## Visualization 
+In the directory Rscripts, there are two scripts 
+- Rarefaction-curves.R : that takes the output from this program to plot the rarefaction curve for the samples 
+- Ordination_plots.R : that takes the output from this program to plot ordination plots for the samples
