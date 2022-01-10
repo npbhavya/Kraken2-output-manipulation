@@ -17,7 +17,7 @@ def kraken_cat_report(dir, rank, col, out):
 	filelist=input_dir(dir)
 	h=defaultdict(list)
 	for file in filelist:
-		openfi=open(file, 'r')
+		openfi=open(file, 'rb')
 		for line in openfi:
 			fields=line.split('\t')
 			if (fields[3] == rank):
