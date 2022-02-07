@@ -1,6 +1,5 @@
 # Kraken2-output-manipulation
 
-      [![DOI](https://zenodo.org/badge/216017473.svg)](https://zenodo.org/badge/latestdoi/216017473)
 
 Kraken2 output generates a report for each datasets, this script takes these individual output reports and combines them to one file in the formal 
 
