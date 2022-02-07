@@ -17,3 +17,8 @@ Make sure to add the parameter **--report-zero-counts** in the kraken2 command, 
     - argparse
     - pandas
     - collection
+
+**Kraken-output-manipulation**
+
+    ` git clone https://github.com/npbhavya/Kraken2-output-manipulation.git`
+    
