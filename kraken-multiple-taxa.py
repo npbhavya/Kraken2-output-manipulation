@@ -15,14 +15,30 @@ taxaID	taxa	sample1	sample2	sample3	sample4 ....
 #concatenating the kraken reports from multiple file using a dictionary
 def kraken_cat_report(dir, rank, col, out):
 	filelist=input_dir(dir)
+	n=len(filelist)
 	h=defaultdict(list)
+	# Initialise
 	for file in filelist:
 		openfi=open(file, 'r')
 		for line in openfi:
 			fields=line.split('\t')
 			if (fields[3] == rank):
 				taxa=fields[5].strip()
-				h[taxa].append(fields[col-1])
+				if taxa not in h.keys():
+					h[taxa]=['0']*n
+		openfi.close()
+	
+	# Fill
+	i=0
+	for file in filelist:
+		openfi=open(file, 'r')
+		for line in openfi:
+			fields=line.split('\t')
+			if (fields[3] == rank):
+				taxa=fields[5].strip()
+				h[taxa][i]=fields[col-1]
+		openfi.close()
+		i+=1
 
 	print ("Writing output to a file")
 	with open (out, 'w') as fout:
