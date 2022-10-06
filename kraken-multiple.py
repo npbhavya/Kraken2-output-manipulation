@@ -5,7 +5,7 @@ import os
 import argparse
 import numpy as np
 import pandas as pd
-from collections import defaultdict
+#from collections import defaultdict
 
 '''
 writing a script to take kraken2 summary files and make one file in the format 
@@ -15,14 +15,17 @@ taxaID	taxa	sample1	sample2	sample3	sample4 ....
 #concatenating the kraken reports from multiple file using a dictionary
 def kraken_cat_report(dir, rank, col, out):
 	filelist=input_dir(dir)
-	h=defaultdict(list)
-	for file in filelist:
+	num_files=len(filelist)
+	h={}
+	for index, file in enumerate(filelist):
 		openfi=open(file, 'r')
 		for line in openfi:
 			fields=line.split('\t')
 			if (fields[3] == rank):
-				h[fields[4]].append(fields[col-1])
-				
+				if fields[4] not in h:
+					h[fields[4]]=['0']*num_files
+				h[fields[4]][index]=fields[col-1]
+
 	print ("Writing output to a file")
 	with open (out, 'w') as fout:
 		fout.write('TaxaID\t%s\n' %filelist)
